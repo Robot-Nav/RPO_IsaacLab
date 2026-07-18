@@ -1,8 +1,8 @@
 # RPO_IsaacLab
 
-[![IsaacSim](https://img.shields.io/badge/IsaacSim-5.1.0-silver.svg)](https://docs.omniverse.nvidia.com/isaacsim/latest/overview.html)
-[![Isaac Lab](https://img.shields.io/badge/IsaacLab-v2.3-silver)](https://isaac-sim.github.io/IsaacLab)
-[![RSL_RL](https://img.shields.io/badge/RSL_RL-3.3.0-silver)](https://github.com/leggedrobotics/rsl_rl)
+[![IsaacSim](https://img.shields.io/badge/IsaacSim-5.1.0-blue.svg)](https://docs.omniverse.nvidia.com/isaacsim/latest/overview.html)
+[![Isaac Lab](https://img.shields.io/badge/IsaacLab-v2.3-green)](https://isaac-sim.github.io/IsaacLab)
+[![RSL_RL](https://img.shields.io/badge/RSL_RL-3.3.0-orange)](https://github.com/leggedrobotics/rsl_rl)
 [![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://docs.python.org/3/whatsnew/3.11.html)
 [![Linux](https://img.shields.io/badge/platform-linux--64-orange.svg)](https://releases.ubuntu.com/22.04/)
 [![License](https://img.shields.io/badge/license-BSD--3-yellow.svg)](https://opensource.org/licenses/BSD-3-Clause)
