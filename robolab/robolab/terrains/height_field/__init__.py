@@ -1,0 +1,21 @@
+# 高度场地形配置类对外导出，统一以 Perlin 前缀命名以区分 IsaacLab 原生 Hf 系列
+from .hf_terrains_cfg import (
+    PerlinCrossStoneTerrainCfg,
+    PerlinDiscreteObstaclesTerrainCfg,
+    PerlinGutterTerrainCfg,
+    PerlinInvertedPyramidSlopedTerrainCfg,
+    PerlinInvertedPyramidStairsGroundAlignedTerrainCfg,
+    PerlinInvertedPyramidStairsTerrainCfg,
+    PerlinParapetTerrainCfg,
+    PerlinPlaneTerrainCfg,
+    PerlinPyramidSlopedTerrainCfg,
+    PerlinPyramidStairsTerrainCfg,
+    PerlinSlopeTerrainCfg,
+    PerlinSquareGapTerrainCfg,
+    PerlinStairsDownUpTerrainCfg,
+    PerlinStairsUpDownTerrainCfg,
+    PerlinSteppingStonesTerrainCfg,
+    PerlinTiltedRampTerrainCfg,
+    PerlinTiltTerrainCfg,
+    PerlinWaveTerrainCfg,
+)

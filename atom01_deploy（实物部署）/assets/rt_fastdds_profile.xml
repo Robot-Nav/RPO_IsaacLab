@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dds>
+    <profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+        <transport_descriptors>
+            <transport_descriptor>
+                <transport_id>shm_transport</transport_id>
+                <type>SHM</type>
+                <segment_size>8388608</segment_size>
+                <maxMessageSize>524288</maxMessageSize>
+            </transport_descriptor>
+            <transport_descriptor>
+                <transport_id>udp_transport</transport_id>
+                <type>UDPv4</type>
+                <sendBufferSize>212992</sendBufferSize>
+                <receiveBufferSize>212992</receiveBufferSize>
+                <non_blocking_send>true</non_blocking_send>
+                <maxMessageSize>65500</maxMessageSize>
+            </transport_descriptor>
+        </transport_descriptors>
+
+        <participant profile_name="realtime_participant_profile" is_default_profile="true">
+            <rtps>
+                <propertiesPolicy>
+                    <properties>
+                        <property>
+                            <name>fastdds.log.verbosity</name>
+                            <value>ERROR</value>
+                        </property>
+                    </properties>
+                </propertiesPolicy>
+
+                <useBuiltinTransports>false</useBuiltinTransports>
+                <userTransports>
+                    <transport_id>shm_transport</transport_id>
+                    <transport_id>udp_transport</transport_id>
+                </userTransports>
+
+                <builtin>
+                    <discovery_config>
+                        <discoveryProtocol>SIMPLE</discoveryProtocol>
+                    </discovery_config>
+                    <readerHistoryMemoryPolicy>PREALLOCATED_WITH_REALLOC</readerHistoryMemoryPolicy>
+                    <writerHistoryMemoryPolicy>PREALLOCATED_WITH_REALLOC</writerHistoryMemoryPolicy>
+                </builtin>
+            </rtps>
+        </participant>
+        
+        <!-- default publisher profile -->
+        <publisher profile_name="default_publisher" is_default_profile="true">
+            <historyMemoryPolicy>PREALLOCATED_WITH_REALLOC</historyMemoryPolicy>
+            <qos>
+                <publishMode>
+                    <kind>SYNCHRONOUS</kind>
+                </publishMode>
+                <data_sharing>
+                    <kind>AUTOMATIC</kind>
+                </data_sharing>
+                <reliability>
+                    <kind>BEST_EFFORT</kind>
+                </reliability>
+                <durability>
+                    <kind>VOLATILE</kind>
+                </durability>
+            </qos>
+        </publisher>
+
+        <!-- default subscriber profile -->
+        <subscriber profile_name="default_subscriber" is_default_profile="true">
+            <historyMemoryPolicy>PREALLOCATED_WITH_REALLOC</historyMemoryPolicy>
+            <qos>
+                <data_sharing>
+                    <kind>AUTOMATIC</kind>
+                </data_sharing>
+                <reliability>
+                    <kind>BEST_EFFORT</kind>
+                </reliability>
+                <durability>
+                    <kind>VOLATILE</kind>
+                </durability>
+            </qos>
+        </subscriber>
+    </profiles>
+</dds>

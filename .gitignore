@@ -1,0 +1,83 @@
+# ========== Python ==========
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg-info/
+*.egg
+.eggs/
+dist/
+build/
+develop-eggs/
+*.so
+
+# ========== 日志与输出 ==========
+logs/
+outputs/
+*.log
+wandb/
+hydra.log
+日志
+
+# ========== 模型 checkpoint ==========
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# ========== 动作数据文件 ==========
+*.pkl
+*.npz
+*.npy
+*.np2bak
+*.bvh
+
+# ========== 机器人 mesh/二进制资产 ==========
+*.stl
+*.STL
+*.obj
+*.dae
+*.mtl
+*.mesh
+*.bin
+
+# ========== 压缩包与二进制包 ==========
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.deb
+*.rpm
+
+# ========== 媒体文件 ==========
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.gif
+
+# ========== 构建产物（ROS2/colcon） ==========
+atom01_deploy（实物部署）/build/
+atom01_deploy（实物部署）/install/
+atom01_deploy（实物部署）/log/
+
+# ========== 缓存与 IDE ==========
+.home/
+.cache/
+.nvidia-omniverse/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ========== 其他 ==========
+*.lock
+!poetry.lock
+!Pipfile.lock
