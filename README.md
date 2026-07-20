@@ -12,7 +12,22 @@
 **RPO_IsaacLab** is a reinforcement learning training workspace for the RPO bipedal robot locomotion, built on NVIDIA Isaac Lab and RSL-RL. It provides a complete pipeline from motion retargeting to sim-to-sim validation and real-robot deployment — supporting walking, dancing, parkour, fall recovery, and more human-style locomotion skills.
 
 ---
+Demo video：
+dance_play：
 
+
+https://github.com/user-attachments/assets/413f273a-3db7-4b24-be86-f605f010600c
+
+
+
+dance_sim2sim:
+
+
+https://github.com/user-attachments/assets/96676feb-c3f0-4323-b9a0-63ba27363d8e
+
+
+
+---
 ## 1. Features
 
 - **AMP (Adversarial Motion Priors)** — Stylized locomotion learning with discriminator-guided style rewards (walking, dancing)
